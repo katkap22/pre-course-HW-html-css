@@ -1,0 +1,313 @@
+/*==============Сброс стилей=================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*==============Общие стили=================*/
+html,
+body {
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.title {
+    color: #363940;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 43px; /* 134.375% */
+}
+
+.text {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+}
+
+/*================Стили для хедера=================*/
+.header {
+    background: #0A61F7;
+    padding: 14px 0;
+    /*height: 76px;*/
+}
+
+.menu-link {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+/*=================Стили для 1-й секции================*/
+.main-title {
+    color: #363940;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: 68px; /* 117.241% */
+    margin-bottom: 30px;
+}
+
+.main .text {
+    margin-bottom: 40px;
+}
+
+.button {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    background-color: #0A61F7;
+    border-radius: 4px;
+    padding:15px 24px;
+}
+
+.main-img {
+    border-radius: 10px 10px 0 0;
+}
+
+/*=================Стили для 2-й секции================*/
+.rates-section {
+    background-color: #F9FAFC;
+    padding: 100px 0;
+}
+
+.rates-section .title {
+    margin-bottom: 20px;
+}
+
+.rates-section .text {
+    margin-bottom: 40px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #95A1BB;
+    width: 240px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.table-subtitle {
+    color: #363940;;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-subtitle.gray {
+    color: #95A1BB;
+}
+
+.table-title {
+    color: #363940;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px; /* 122.222% */
+}
+
+.table-link {
+    color: #0A61F7;
+    /*font-size: 14px;*/
+    /*font-weight: 400;*/
+    /*line-height: 22px; !* 157.143% *!*/
+}
+
+.table-button {
+    color: #0A61F7;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.6px; /* 163.333% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
+    width: 140px;  /*или оставляем ширину и не задаем боковые паддинги*/
+    padding: 8px 0; /*или убираем ширину и задаем боковые паддинги 40px bkb text-align: center*/
+}
+
+.table-button.active {
+    color: #FFF;
+    background-color: #0A61F7;
+}
+
+.table-footer td{
+    padding: 30px 0;
+}
+
+/*================Стили для 3-й секции=================*/
+.create-account-section {
+    padding: 100px 0;
+}
+
+/*------------------Левая часть-----------------------*/
+
+.create-account-section .title {
+    margin-bottom: 50px;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+.list-item {
+    list-style-image: url("./assets/images/check.svg");
+    margin-left: 30px;
+    margin-bottom: 15px;
+    color: #363940;
+
+    /*font-size: 16px;*/
+    /*font-weight: 400;*/
+    /*line-height: 22px; !* 137.5% *!*/
+}
+
+/*--------------------Правая часть--------------------*/
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+input, select, fieldset, textarea {
+    border-radius: 4px;
+    border: 1px solid #95A1BB;
+    padding: 14px 15px;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px; /* 140% */
+    font-family: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="email"], input[type="password"], input[type="date"], select {
+    width: 230px;
+    height: 50px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('./assets/images/Calendar.svg') no-repeat;
+}
+
+select {
+    background: url('./assets/images/Arrow-down.svg') no-repeat right 15px top 50%;
+    appearance: none;
+}
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+/*====================Стили для футера================================*/
+footer {
+    background-color: #0A61F7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+small {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+
+
+.custom-checkbox {
+    /*appearance: none;*/
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display:inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url('./assets/images/Icon.svg');
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+    background-color: #e9ecef;
+}
